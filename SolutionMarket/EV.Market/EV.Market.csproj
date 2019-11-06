@@ -6,4 +6,8 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EV.Dominio\EV.Dominio.csproj" />
+  </ItemGroup>
+
 </Project>
