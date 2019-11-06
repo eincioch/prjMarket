@@ -8,17 +8,17 @@ using System.Windows.Forms;
 
 namespace EV.Market
 {
-    public partial class FormContenedor : Form
+    public partial class FormDocumento : Form
     {
-        public FormContenedor()
+        public FormDocumento()
         {
             InitializeComponent();
         }
 
-        private void btnMaintenanceDocumento_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
-            var frmDocu = new FormDocumento();
-            frmDocu.ShowDialog();
+            Close();
+            Dispose();
         }
     }
 }
