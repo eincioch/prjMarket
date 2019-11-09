@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EV.Market.Maintenance;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,11 @@ namespace EV.Market
         {
             var frmDocu = new FormDocumento();
             frmDocu.ShowDialog();
+        }
+
+        private void FormContenedor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

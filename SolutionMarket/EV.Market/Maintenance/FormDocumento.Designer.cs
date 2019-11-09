@@ -1,4 +1,4 @@
-﻿namespace EV.Market
+﻿namespace EV.Market.Maintenance
 {
     partial class FormDocumento
     {
@@ -36,6 +36,7 @@
             this.cDescr = new System.Windows.Forms.ColumnHeader();
             this.label2 = new System.Windows.Forms.Label();
             this.txtDescr = new System.Windows.Forms.TextBox();
+            this.btnImprimir = new System.Windows.Forms.Button();
             // 
             // label1
             // 
@@ -108,11 +109,22 @@
             this.txtDescr.Size = new System.Drawing.Size(328, 23);
             this.txtDescr.TabIndex = 5;
             // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Location = new System.Drawing.Point(423, 434);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(75, 23);
+            this.btnImprimir.TabIndex = 6;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            // 
             // FormDocumento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(779, 476);
+            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.txtDescr);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listView1);
@@ -137,5 +149,6 @@
         private System.Windows.Forms.ColumnHeader cDescr;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtDescr;
+        private System.Windows.Forms.Button btnImprimir;
     }
 }

@@ -70,6 +70,7 @@
             this.KeyPreview = true;
             this.Name = "FormContenedor";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormContenedor_Load);
 
         }
 

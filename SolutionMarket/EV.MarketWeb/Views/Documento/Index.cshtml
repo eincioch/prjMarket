@@ -1,0 +1,37 @@
+﻿@model EV.DominioNet.Entity.Documento
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Documento</h2>
+
+<a href="Documento/Download_PDF/" target="_blank" class="btn btn-primary" style="margin-top:20px;">Download_PDF</a>
+
+<div>
+    <h4>Documento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdDocumento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdDocumento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cDescr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cDescr)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+
+</p>
